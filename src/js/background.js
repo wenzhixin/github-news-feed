@@ -11,7 +11,9 @@ function checkUnread() {
         var unreadCount = 0,
             latestItem = getStore('github-latest-item');
 
-        if (!latestItem) {
+        if ($content.find('.alert').length === 0) {  // not login
+            unreadCount = -1;
+        } else if (!latestItem) { // first use
             unreadCount = 21;
         } else {
             $content.find('.alert').each(function() {

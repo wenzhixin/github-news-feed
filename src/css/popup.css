@@ -45,7 +45,7 @@ a:hover {
     color: #bbb;
 }
 
-.news .pagination a {
+.pagination a {
     display: block;
     padding: 6px;
     text-align: center;
@@ -60,4 +60,8 @@ a:hover {
     background-repeat: repeat-x;
     border: 1px solid #ddd;
     border-bottom: 1px solid #c5c5c5;
+}
+
+#login {
+    display: none;
 }

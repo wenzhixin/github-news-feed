@@ -20,6 +20,8 @@ function showUnread(unreadCount) {
         text = '20+';
     } else if (unreadCount > 0) {
         text = unreadCount + '';
+    } else if (unreadCount === -1) {
+        text = 'x';
     }
 
     chrome.browserAction.setBadgeText({text: text});

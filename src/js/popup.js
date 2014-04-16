@@ -6,6 +6,11 @@ $(function() {
     var $content = $('#content');
 
     $content.load('https://github.com/dashboard/index/1 .news', function() {
+        if ($content.find('.alert').length === 0) {
+            $('#login').show();
+            return;
+        }
+
         $content.find('.alert').each(function(i) {
             var $time = $(this).find('.time').insertAfter($(this).find('.title')).find('time');
 
