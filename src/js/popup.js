@@ -12,7 +12,7 @@ $(function() {
         }
 
         $content.find('.alert').each(function(i) {
-            var $time = $(this).find('.time').insertAfter($(this).find('.title')).find('time');
+            var $time = $(this).find('.time').insertAfter($(this).find('.title')).find('[datetime]');
 
             $time.text(moment($time.attr('datetime')).fromNow());
 
@@ -27,7 +27,13 @@ $(function() {
             }
         });
 
-        $content.find('a').attr('target', '_blank');
+        $content.find('a').attr('target', '_blank').each(function() {
+            var href = $(this).attr('href');
+
+            if (href.charAt(0) === '/') {
+                $(this).attr('href', 'https://github.com' + href);
+            }
+        });
         $content.find('.pagination a').attr('href', 'https://github.com/dashboard/index/2');
     })
 });

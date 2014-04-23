@@ -3,7 +3,7 @@
 
     "name": "GitHub News Feed",
     "description" : "Shows a tooltip with your unread news feed from GitHub",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "manifest_version": 2,
     "icons": {"128": "logo.png"},
     "background": {"page": "background.html"},
