@@ -6,6 +6,10 @@ A Google Chrome extension to show your unread GitHub News Feed.
 
 ## CHANGE LOG
 
+### 1.0.3
+
+* Fix background.js check unread count error.
+
 ### 1.0.2
 
 * Fix datetime display error.
@@ -13,4 +17,4 @@ A Google Chrome extension to show your unread GitHub News Feed.
 
 ### 1.0.1
 
-* add check login or not
+* Add check login or not

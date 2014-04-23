@@ -18,7 +18,7 @@ function checkUnread() {
         } else {
             $content.find('.alert').each(function() {
                 if (latestItem.title === $(this).find('.title').text() &&
-                    latestItem.time === $(this).find('time').attr('datetime')) {
+                    latestItem.time === $(this).find('[datetime]').attr('datetime')) {
                     return false;
                 }
                 unreadCount++;
