@@ -6,6 +6,10 @@ A Google Chrome extension to show your unread GitHub News Feed.
 
 ## CHANGE LOG
 
+### 1.0.4
+
+* Fix #1: Broken UI after github updated their header.
+
 ### 1.0.3
 
 * Fix background.js check unread count error.

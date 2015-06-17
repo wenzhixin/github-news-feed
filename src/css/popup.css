@@ -65,3 +65,20 @@ a:hover {
 #login {
     display: none;
 }
+
+.select-menu-button-gravatar {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.select-menu-button-gravatar img {
+    vertical-align: middle;
+}
+
+.line-divider {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0px 5px;
+    background-color: #e5e5e5;
+}
