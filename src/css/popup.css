@@ -82,3 +82,9 @@ a:hover {
     margin: 0px 5px;
     background-color: #e5e5e5;
 }
+
+button.btn {
+    background: transparent;
+    border: none;
+}
+}
