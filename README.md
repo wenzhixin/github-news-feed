@@ -6,6 +6,10 @@ A Google Chrome extension to show your unread GitHub News Feed.
 
 ## CHANGE LOG
 
+### 1.0.6
+
+Fix #4: Icons are looking big and wierd.
+
 ### 1.0.5
 
 Fix button display style.

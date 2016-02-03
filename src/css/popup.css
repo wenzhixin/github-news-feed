@@ -11,6 +11,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.octicon,
+.mega-octicon {
+    width: 16px;
+    height: 16px;
+}
+
 .news {
     width: 500px;
 }
@@ -79,12 +85,11 @@ a:hover {
     display: inline-block;
     width: 1px;
     height: 10px;
-    margin: 0px 5px;
+    margin: 0 5px;
     background-color: #e5e5e5;
 }
 
 button.btn {
     background: transparent;
     border: none;
-}
 }
