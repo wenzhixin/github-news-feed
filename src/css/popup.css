@@ -11,6 +11,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.avatar {
+    margin-right: 2px;
+}
+
+.avatar img {
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
 .octicon,
 .mega-octicon {
     width: 16px;

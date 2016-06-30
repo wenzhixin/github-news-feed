@@ -10,17 +10,21 @@ $(function() {
             $('#login').show();
             return;
         }
-        
-        var user = $('.js-select-button').text();
-        $('.select-menu-button.with-gravatar')
-            .wrap('<a href="https://github.com/' + user + '" target="_blank"></a>')
-            .parent().parent()
+
+        var $header = $('<div class="header"></div>');
+        $header.append('<a href="#" target="_blank"><span class="avatar">' +
+                '</span><span class="username">loading...</span></a>')
             .append('<span class="line-divider"></span>')
             .append('<a href="https://github.com/stars" target="_blank">Stars</a>')
             .append('<span class="line-divider"></span>')
             .append('<a href="https://github.com/notifications" target="_blank">Notifications</a>');
 
-        $('.select-menu-modal-holder.js-menu-content').hide();
+        $header.find('.avatar').load('https://github.com .avatar');
+        $header.find('.username').load('https://github.com strong.css-truncate-target', function () {
+            $header.find('.username').parent()
+                .attr('href', 'https://github.com/' + $header.find('.username').text());
+        });
+        $content.prepend($header);
 
         $content.find('.alert').each(function(i) {
             var $time = $(this).find('.time').insertAfter($(this).find('.title')).find('[datetime]');
@@ -47,6 +51,6 @@ $(function() {
         });
         $content.find('.pagination a').attr('href', 'https://github.com/dashboard/index/2');
 
-        $content.find('.protip').hide();
-    })
+        $content.find('.newsfeed-footer').hide();
+    });
 });
