@@ -26,6 +26,8 @@ $(function() {
         });
         $content.prepend($header);
 
+        $content.find('.select-menu').remove();
+
         $content.find('.alert').each(function(i) {
             var $time = $(this).find('.time').insertAfter($(this).find('.title')).find('[datetime]');
 
