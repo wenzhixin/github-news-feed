@@ -1,104 +1,118 @@
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 a {
-    color: #4183c4;
-    text-decoration: none;
+  color: #0366d6;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .avatar {
-    margin-right: 2px;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: top;
+  border-radius: 3px;
 }
 
-.avatar img {
-    vertical-align: middle;
-    border-radius: 2px;
+.octicon, .mega-octicon {
+  width: 16px;
+  height: 16px;
 }
 
-.octicon,
-.mega-octicon {
-    width: 16px;
-    height: 16px;
+* {
+  box-sizing: border-box;
 }
 
-.news {
-    width: 500px;
+.header {
+  padding-bottom: 10px;
 }
 
-.news .alert {
-    padding: 0 0 1em;
-    overflow: hidden;
-    position: relative;
-    border-top: 1px solid #f1f1f1;
+.d-flex {
+  display: -webkit-box !important;
+  display: flex !important;
 }
 
-.news .alert:first-child {
-    border-top: 0;
+.py-3 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 
-.news .body {
-    border-bottom: 0;
-    overflow: hidden;
-    padding: 1em 0 0;
+.flex-items-baseline {
+  -webkit-box-align: baseline !important;
+  align-items: baseline !important;
 }
 
-.news .title {
-    color: #666;
-    display: inline;
-    font-size: 13px;
-    font-weight: normal;
+.border-gray-light {
+  border-color: #eaecef !important;
 }
 
-.news .time {
-    font-size: 12px;
-    display: inline;
-    color: #bbb;
+.border-bottom {
+  border-bottom: 1px #e1e4e8 solid !important;
 }
 
-.pagination a {
-    display: block;
-    padding: 6px;
-    text-align: center;
-    padding: 3px 10px;
-    color: #555;
-    font-style: normal;
-    font-size: 13px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
-    background-color: #eaeaea;
-    background-image: linear-gradient(#fafafa, #eaeaea);
-    background-repeat: repeat-x;
-    border: 1px solid #ddd;
-    border-bottom: 1px solid #c5c5c5;
+.width-full {
+  width: 100% !important;
+}
+
+.flex-justify-between {
+  -webkit-box-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+.link-gray-dark {
+  color: #24292e !important;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+.f6 {
+  font-size: 12px !important;
+}
+
+.ml-4 {
+  margin-left: 24px !important;
+}
+
+.mr-3 {
+  margin-right: 16px !important;
 }
 
 #login {
-    display: none;
-}
-
-.select-menu-button-gravatar {
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.select-menu-button-gravatar img {
-    vertical-align: middle;
+  display: none;
 }
 
 .line-divider {
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #e5e5e5;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #e5e5e5;
 }
 
-button.btn {
-    background: transparent;
-    border: none;
+.pagination a {
+  display: block;
+  padding: 6px;
+  text-align: center;
+  padding: 3px 10px;
+  color: #555;
+  font-style: normal;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #eaeaea;
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  background-repeat: repeat-x;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #c5c5c5;
 }
