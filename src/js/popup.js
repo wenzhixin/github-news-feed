@@ -26,7 +26,7 @@ $(function() {
     })
     $content.prepend($header)
 
-    $content.find('.tabnav, form, .text-gray').remove()
+    $content.find('.tabnav, .select-menu, form, .text-gray').remove()
 
     $content.find('.news>div').each(function(i) {
       const $time = $(this).find('relative-time')

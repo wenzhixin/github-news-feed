@@ -17,7 +17,11 @@ function checkUnread() {
       unreadCount = 21
     } else {
       $content.find('.news>div').each(function() {
-        if ($(this).hasClass('tabnav') || $(this).hasClass('text-gray')) {
+        if (
+          $(this).hasClass('tabnav') ||
+          $(this).hasClass('select-menu') ||
+          $(this).hasClass('text-gray')
+        ) {
           return
         }
         if (latestItem.title === $(this).find('.text-bold').text() &&
